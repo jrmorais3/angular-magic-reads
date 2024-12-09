@@ -3,9 +3,10 @@ import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-nav',
-  imports: [HeaderComponent],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrl: './nav.component.css',
+  standalone: true,
+  imports: [HeaderComponent],
 })
 export class NavComponent {
 
