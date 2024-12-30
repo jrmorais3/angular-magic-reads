@@ -9,7 +9,7 @@ import { MagicReadsComponent } from "./components/magic-reads/magic-reads.compon
   selector: 'app-root',
   imports: [RouterOutlet, NavComponent, HeaderComponent, FooterComponent, MagicReadsComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'angular-magic-reads';
