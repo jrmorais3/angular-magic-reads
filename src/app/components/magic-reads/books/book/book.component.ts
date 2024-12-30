@@ -1,11 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Book } from './model/Book';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-book',
   imports: [],
   templateUrl: './book.component.html',
-  styleUrl: './book.component.css'
+  styleUrl: './book.component.css',
+  providers: [CurrencyPipe]
 })
-export class BookComponent {
+export class BookComponent implements OnInit {
+
+  @Input()
+  book!:Book;
+
+  constructor(){}
+
+  ngOnInit(): void {
+  }
 
 }
