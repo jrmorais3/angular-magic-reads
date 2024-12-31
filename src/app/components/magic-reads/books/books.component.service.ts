@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 export class BooksService
 {
-    private url = 'https://localhost:44329/api/MagicReads'
+    private url = 'http://localhost:5266/api/MagicReads'
     httpOptions = {
         headers: new HttpHeaders({'content-type': 'application/json'})
     }
