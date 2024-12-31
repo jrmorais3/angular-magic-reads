@@ -7,16 +7,17 @@ import { CurrencyPipe } from '@angular/common';
   imports: [],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css',
-  providers: [CurrencyPipe]
+  providers: [CurrencyPipe],
 })
 export class BookComponent implements OnInit {
-
   @Input()
   book!:Book;
 
-  constructor(){}
+  constructor() {}
 
   ngOnInit(): void {
+    // if (!this.book) {
+    //   this.book = new Book();
+    // }
   }
-
 }
