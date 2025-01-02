@@ -10,22 +10,11 @@ import { BooksComponent } from './books/books.component';
   templateUrl: './magic-reads.component.html',
   standalone: true,
   styleUrl: './magic-reads.component.css',
-  providers: [BooksService]
+  providers: [BooksService],
 })
 export class MagicReadsComponent implements OnInit {
 
-  bookService : BooksService
-  books: any;
+  constructor() {}
 
-  constructor(bookService: BooksService) {
-    this.bookService = bookService;
-  }
-
-  ngOnInit(): void {
-
-    this.books = this.bookService.getBook().subscribe((data => (
-      this.books = data,
-      console.log(this.books)
-    )))
-  }
+  ngOnInit(): void {}
 }
