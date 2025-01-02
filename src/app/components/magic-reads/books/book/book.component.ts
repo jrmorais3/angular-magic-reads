@@ -16,8 +16,5 @@ export class BookComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // if (!this.book) {
-    //   this.book = new Book();
-    // }
   }
 }
